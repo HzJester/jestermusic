@@ -62,5 +62,11 @@ async def gstart(_, message: Message):
             ]
         )
    )
+  
+Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
+
+async def help(_, message: Message):
+
+      await message.reply_text("""**
 
 
