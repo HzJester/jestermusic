@@ -13,7 +13,21 @@ async def start(_, message: Message):
 
 Grubunuzun sesli aramasında müzik çalabilirim. Developed by [Jester](https://t.me/sarikola).
 
-Beni grubunuza ekleyin ve özgürce müzik çalın!**
+Beni grubunuza ekleyin ve özgürce müzik çalın!
+
+Şuanda desteklediğim komutlar:
+
+✳️ /oynat  -  Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.
+
+✳️ /durdur -  Sesli Sohbet Müziğini Duraklat.
+
+✳️ /devam  -  Sesli Sohbet Müziğine Devam Et.
+
+✳️ /atla   -  Sesli Sohbette Çalan Geçerli Müziği Atlar.
+
+✳️ /bitir  -  Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.
+
+✳️ /bul    -  Müziği bulup gruba gönderir. Örnek /bul ezhel geceler.**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -29,7 +43,7 @@ Beni grubunuza ekleyin ve özgürce müzik çalın!**
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Gruba Ekle ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "➕ Gruba Ekle ➕", url="https://t.me/ZmoniosMusicBot?startgroup=true"
                     )]
             ]
         ),
