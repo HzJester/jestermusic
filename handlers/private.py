@@ -15,19 +15,6 @@ Grubunuzun sesli aramasında müzik çalabilirim. Developed by [Jester](https://
 
 Beni grubunuza ekleyin ve özgürce müzik çalın!
 
-Şuanda desteklediğim komutlar:
-
-✳️ /oynat  -  Userbotun gruba katılması için ve aynı zamanda yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.
-
-✳️ /durdur -  Sesli Sohbet Müziğini Duraklat.
-
-✳️ /devam  -  Sesli Sohbet Müziğine Devam Et.
-
-✳️ /atla   -  Sesli Sohbette Çalan Geçerli Müziği Atlar.
-
-✳️ /bitir  -  Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.
-
-✳️ /bul    -  Müziği bulup gruba gönderir. Örnek /bul ezhel geceler.**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -68,5 +55,18 @@ Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def help(_, message: Message):
 
       await message.reply_text("""**
+Şuanda desteklediğim komutlar:
+
+✳️ /oynat  -  Userbotun gruba katılması için ve aynı zamanda yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.
+
+✳️ /durdur -  Sesli Sohbet Müziğini Duraklat.
+
+✳️ /devam  -  Sesli Sohbet Müziğine Devam Et.
+
+✳️ /atla   -  Sesli Sohbette Çalan Geçerli Müziği Atlar.
+
+✳️ /bitir  -  Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.
+
+✳️ /bul    -  Müziği bulup gruba gönderir. Örnek /bul ezhel geceler.**""")
 
 
