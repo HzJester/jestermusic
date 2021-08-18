@@ -68,13 +68,13 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("etc/font.otf", 32)
-    draw.text((190, 550), f"Title: {title}", (255, 255, 255), font=font)
+    draw.text((190, 550), f"Başlık: {title}", (255, 255, 255), font=font)
     draw.text(
-        (190, 590), f"Duration: {duration}", (255, 255, 255), font=font
+        (190, 590), f"Süre: {duration}", (255, 255, 255), font=font
     )
-    draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((190, 630), f"Görünümler: {views}", (255, 255, 255), font=font)
     draw.text((190, 670),
-        f"Added By: {requested_by}",
+        f"Ekleyen: {requested_by}",
         (255, 255, 255),
         font=font,
     )
@@ -85,7 +85,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 
-@Client.on_message(command("oynat") 
+@Client.on_message(command("oynat,oynat{BOT_USERNAME}") 
                    & filters.group
                    & ~filters.edited 
                    & ~filters.forwarded
@@ -124,12 +124,12 @@ async def oynat(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name}, asistan userbot, yoğun katılım istekleri nedeniyle grubunuza katılamadı. Userbot'un grupta yasaklanmadığından emin olun ve daha sonra tekrar deneyin!")
+                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey @zmoniosasistan, asistan userbot, yoğun katılım istekleri nedeniyle grubunuza katılamadı. Userbot'un grupta yasaklanmadığından emin olun ve daha sonra tekrar deneyin!")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, asistan userbot bu sohbette değil, eklemek için adminden ilk kez /oynat komutunu göndermesini isteyin.</i>")
+            f"<i>Hey @zmoniosasistan, asistan userbot bu sohbette değil, eklemek için adminden ilk kez /oynat komutunu göndermesini isteyin.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
