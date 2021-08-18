@@ -17,7 +17,7 @@ Beni grubunuza ekleyin ve özgürce müzik çalın!
 
 Şuanda desteklediğim komutlar:
 
-✳️ /oynat  -  Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.
+✳️ /oynat  -  Userbotun gruba katılması için ve aynı zamanda yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.
 
 ✳️ /durdur -  Sesli Sohbet Müziğini Duraklat.
 
