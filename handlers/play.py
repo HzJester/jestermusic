@@ -85,7 +85,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 
-@Client.on_message(command("oynat") 
+@Client.on_message(command("oynat,oynat@JesterMusicBot") 
                    & filters.group
                    & ~filters.edited 
                    & ~filters.forwarded
@@ -129,7 +129,7 @@ async def oynat(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey @zmoniosasistan, asistan userbot bu sohbette değil, eklemek için adminden ilk kez /oynat komutunu göndermesini isteyin.</i>")
+            f"<i>Hey @jesterasistan, asistan userbot bu sohbette değil, eklemek için adminden ilk kez /oynat komutunu göndermesini isteyin.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
