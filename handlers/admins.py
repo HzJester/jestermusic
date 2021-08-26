@@ -24,7 +24,7 @@ async def pause(_, message: Message):
         await message.reply_text("▶️ duraklatıldı!")
 
 
-@Client.on_message(command("devam,devam@JesterMusicBot") & other_filters)
+@Client.on_message(filters.command(["devam","devam@JesterMusicBot"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
@@ -39,7 +39,7 @@ async def resume(_, message: Message):
         await message.reply_text("⏸ Devam ettirildi!")
 
 
-@Client.on_message(command("bitir,bitir@JesterMusicBot") & other_filters)
+@Client.on_message(filters.command(["bitir","bitir@JesterMusicBot"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -55,7 +55,7 @@ async def stop(_, message: Message):
         await message.reply_text("❌ Akış durduruldu!")
 
 
-@Client.on_message(command("atla,atla@JesterMusicBot") & other_filters)
+@Client.on_message(command(["atla","atla@JesterMusicBot"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
