@@ -30,7 +30,7 @@ Beni grubunuza ekleyin ve özgürce müzik çalın!
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Gruba Ekle ➕", url="https://t.me/ZmoniosMusicBot?startgroup=true"
+                        "➕ Gruba Ekle ➕", url="https://t.me/JesterMusicBot?startgroup=true"
                     )]
             ]
         ),
